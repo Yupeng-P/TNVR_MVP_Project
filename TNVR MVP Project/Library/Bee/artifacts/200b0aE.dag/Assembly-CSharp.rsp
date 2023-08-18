@@ -115,6 +115,20 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:FISHNET
 -define:FISHNET_V3
+-define:STEAMWORKS_NET
+-define:MIRROR
+-define:MIRROR_57_0_OR_NEWER
+-define:MIRROR_58_0_OR_NEWER
+-define:MIRROR_65_0_OR_NEWER
+-define:MIRROR_66_0_OR_NEWER
+-define:MIRROR_2022_9_OR_NEWER
+-define:MIRROR_2022_10_OR_NEWER
+-define:MIRROR_70_0_OR_NEWER
+-define:MIRROR_71_0_OR_NEWER
+-define:MIRROR_73_OR_NEWER
+-define:MIRROR_78_OR_NEWER
+-define:MIRROR_79_OR_NEWER
+-define:MIRROR_81_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -325,13 +339,35 @@
 -r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/com.rlabrecque.steamworks.net.editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/com.rlabrecque.steamworks.net.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/FishNet.Codegen.Cecil.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/FishNet.Demos.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/FishNet.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/GameKit.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Heathen.Core.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Heathen.Core.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Heathen.Steamworks.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Heathen.Steamworks.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/kcp2k.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Authenticators.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.CompilerSymbols.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Components.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Examples.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Transports.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/SimpleWebTransport.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Telepathy.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/TriInspector.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/TriInspector.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Mathematics.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -358,9 +394,53 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.Analyzers.dll"
+"Assets/FishNet/Plugins/FishySteamworks/Core/BidirectionalDictionary.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ClientHostSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ClientSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/CommonSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/LocalPacket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ServerSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/FishySteamworks.cs"
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
+"Assets/Scripts/BootstrapManager.cs"
+"Assets/Scripts/MainMenuManager.cs"
+"Assets/Scripts/PlayerColorNetwork.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
+"Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 -langversion:9.0
 
 /deterministic

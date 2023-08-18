@@ -104,6 +104,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:FISHNET
 -define:FISHNET_V3
+-define:STEAMWORKS_NET
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
@@ -295,13 +296,25 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
--r:"/Users/yahary/TNVR MVP Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
--r:"/Users/yahary/TNVR MVP Project/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/com.rlabrecque.steamworks.net.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/FishNet.Demos.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/FishNet.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/GameKit.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Heathen.Core.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Heathen.Steamworks.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/kcp2k.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Mirror.Authenticators.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Mirror.Components.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Mirror.Examples.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Mirror.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Mirror.Transports.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/SimpleWebTransport.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Telepathy.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/TriInspector.ref.dll"
+-r:"Library/Bee/artifacts/200b0aP.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.Services.Core.ref.dll"
@@ -312,8 +325,16 @@
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/UnityEngine.UI.ref.dll"
 -analyzer:"Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.Analyzers.dll"
+"Assets/FishNet/Plugins/FishySteamworks/Core/BidirectionalDictionary.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ClientHostSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ClientSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/CommonSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/LocalPacket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/Core/ServerSocket.cs"
+"Assets/FishNet/Plugins/FishySteamworks/FishySteamworks.cs"
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
+"Assets/Scripts/PlayerColorNetwork.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 

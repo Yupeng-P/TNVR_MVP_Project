@@ -104,6 +104,7 @@
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:FISHNET
 -define:FISHNET_V3
+-define:STEAMWORKS_NET
 -define:TEXTMESHPRO
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -296,8 +297,8 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
--r:"/Users/yahary/TNVR MVP Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
--r:"/Users/yahary/TNVR MVP Project/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"/Users/yahary/git/TNVR_MVP_Project/TNVR MVP Project/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Assets/FishNet/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/TriInspector.ref.dll"
 -r:"Library/Bee/artifacts/200b0aP.dag/Unity.TextMeshPro.ref.dll"

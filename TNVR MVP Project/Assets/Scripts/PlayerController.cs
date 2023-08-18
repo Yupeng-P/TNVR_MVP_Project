@@ -6,7 +6,6 @@ using FishNet.Object;
 
 public class PlayerController : NetworkBehaviour
 {
-    // Start is called before the first frame update
     [Header("Base Setup")]
     public float walkingSpeed = 7.5f;
     public float runningSpeed = 11.5f;
@@ -29,6 +28,7 @@ public class PlayerController : NetworkBehaviour
     [Header("Animator setup")]
     public Animator anim;
 
+    private bool isPaused = false;
 
 
     // Network Setup
@@ -72,29 +72,55 @@ public class PlayerController : NetworkBehaviour
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
 
-        if (Input.GetButton("Jump") && canMove && CharacterController.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            moveDirection.y = jumpSpeed;
+            TogglePause();
+        }
+
+        if (!isPaused)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {  
+                Application.Quit();
+            }
+
+            if (Input.GetButton("Jump") && canMove && CharacterController.isGrounded)
+            {
+                moveDirection.y = jumpSpeed;
+            }
+            else
+            {
+                moveDirection.y = movementDirectionY;
+            }
+
+            if(!CharacterController.isGrounded)
+            {
+                moveDirection.y -= gravity * Time.deltaTime;
+            }
+
+            CharacterController.Move(moveDirection * Time.deltaTime);
+            
+            if(canMove && playerCamera != null)
+            {
+                rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+                rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+                playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+                transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            }
+        }
+    }
+
+    void TogglePause()
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            Time.timeScale = 0; // Pause the game
         }
         else
         {
-            moveDirection.y = movementDirectionY;
+            Time.timeScale = 1; // Resume the game
         }
-
-        if(!CharacterController.isGrounded)
-        {
-            moveDirection.y -= gravity * Time.deltaTime;
-        }
-
-        CharacterController.Move(moveDirection * Time.deltaTime);
-        
-        if(canMove && playerCamera != null)
-        {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
-        }
-
     }
 }
